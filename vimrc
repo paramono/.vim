@@ -27,6 +27,9 @@ call vundle#begin()
 "call vundle#begin('~/some/path/here')
 
 
+" disable matching paren highlighting
+let loaded_matchparen = 1
+
 " Plugin 'vim-addon-mw-utils'
 
 " " Git plugin not hosted on GitHub
@@ -65,7 +68,7 @@ Plugin 'honza/vim-snippets'
 Plugin 'scrooloose/nerdtree'
 Plugin 'ivalkeen/nerdtree-execute'
 Plugin 'Xuyuanp/nerdtree-git-plugin'
-Plugin 'jistr/vim-nerdtree-tabs'
+" Plugin 'jistr/vim-nerdtree-tabs'
 
 Plugin 'tabular'
 Plugin 'a.vim'
@@ -80,9 +83,14 @@ Plugin 'tyru/open-browser.vim'
 Plugin 'tomasr/molokai'
 Plugin 'flazz/vim-colorschemes'
 
-Plugin 'bling/vim-airline'
+" Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'powerline/fonts'
+
 Plugin 'vim-scripts/summerfruit256.vim'
+Plugin 'xolox/vim-misc'
+Plugin 'xolox/vim-colorscheme-switcher'
 
 
 " All of your Plugins must be added before the following line
@@ -98,6 +106,7 @@ let g:airline_powerline_fonts = 1
 set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 10
 
 nmap <F8> :TagbarToggle<CR>
+" nmap <F9> :Next
 
 filetype plugin indent on    " required
 " To ignore plugin indent changes, instead use:
@@ -209,5 +218,46 @@ set backupdir=./.backup,.,/tmp
 set directory=.,./.backup,/tmp
 
 " colorscheme 
-colorscheme pyte
+" colorscheme pyte
+" colorscheme mint
+" colorscheme desertedoceanburnt
+" colorscheme DevC++
+" colorscheme disciple
+" colorscheme django
+" colorscheme donbass
+" colorscheme earthburn
+" colorscheme elda
+" colorscheme flatland
+" pyte
+" corn
+" corporation
+" desertedoceanburnt
+" DevC++
+" disciple
+" django
+" donbass
+" dorhinge
+" earthburn
+" elda
+" fine_blue
+" flatland
+
+" getafe
+colorscheme github
+" google
+" gor
+" gotham
+" gotham256
+" heliotrope
+" herokudoc
+" herokudoc-gvim
+" hornet
+" ironman
+" lucius
+" made_of_code
+" marklar
+" mint
+" PaperColor
+
+
 :let g:airline_theme='papercolor'
